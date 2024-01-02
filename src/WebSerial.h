@@ -36,7 +36,7 @@ class WebSerialClass : public Print {
 	size_t write(uint8_t);
 	size_t write(const uint8_t *buffer, size_t size);
 
-  private:
+  protected:
 	AsyncWebServer *_server;
 	AsyncWebSocket *_ws;
 	RecvMsgHandler _RecvFunc = NULL;
